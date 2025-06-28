@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <section class="cabecera">
+        <!-- CABECERA -->
+        <div class="logo">
+          <!--LOGO-->
+          <img
+            src="../imagenes/461595352_27773043162282910_3274584581630370881_n.jpg"
+            alt="Logo de Lio Tech Electronics"
+            width="100"
+            height="100"
+          />
+        </div>
+        <div class="titulo">
+          <!--TITULO-->
+          <h1>Lio Tech Electronics</h1>
+        </div>
+        <div class="login">
+          <!--LOGIN-->
+          <form action=".submit" method="post">
+            <label for="text"></label>
+            <input
+              type="Usuario"
+              name="Usuario"
+              id="Usuario"
+              placeholder="Usuario"
+            />
+            <label for="password"></label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Contraseña"
+            />
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+      </section>
+      <br />
+      <section>
+        <!-- NAVEGACION -->
+        <nav>
+          <div class="navegacion">
+            <!--NAVEGACION a-->
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li>
+              <a href="acerca_de_nosotros.html">Acerca de Nosotros</a>
+            </li>
+          </div>
+        </nav>
+      </section>
+      <section>
+        <!-- BUSCADOR -->
+        <nav>
+          <div class="busqueda" style="display: flex">
+            <form action=".submit" method="post">
+              <label for="search">
+                <input
+                  type="text"
+                  name="search"
+                  id="search"
+                  placeholder="Buscar productos..."
+                />
+                <input type="submit" value="Enviar" />
+              </label>
+            </form>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <!-- CONTENIDO PRINCIPAL -->
+      <aside class="formulario-contacto">
+        <h1>Dejanos tu mensaje</h1>
+        <form action="enviar.php" method="POST" class="formulario-contacto">
+          <h2>Contacto</h2>
+
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" required />
+          <label for="dni/cuil/cuit">Dni/Cuil/Cuit:</label>
+          <input type="text" id="dni" name="dni" required />
+          <label for="telefono">N° de contacto:</label>
+          <input type="tel" id="telefono" name="telefono" required />
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar</button>
+        </form>
+      </aside>
+    </main>
+    <footer>
+      <section class="pie-pagina">
+        <!-- PIE DE PAGINA -->
+        <div class="copyright">
+          <p>© 2025 Lio Tech Electronics. Todos los derechos reservados.</p>
+        </div>
+        <div class="terminos">
+          <a href="./pages/aviso_legal.html">Terminos y condiciones.</a>
+        </div>
+        <nav>
+          <div class="redes-sociales">
+            <li>
+              <a
+                href="https://www.facebook.com/LioTechElectronics"
+                target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/LioTechElectronics"
+                target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.twitter.com/LioTechElectronics"
+                target="_blank"
+                >Twitter</a
+              >
+            </li>
+          </div>
+        </nav>
+      </section>
+    </footer>
+  </body>
+</html>

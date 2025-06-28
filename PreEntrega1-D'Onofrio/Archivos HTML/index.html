@@ -1,69 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Lio Tech Electronics</title>
+    <!-- CSS de Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Tu CSS -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <body>
+
+  <body class="body">
+    <!-- CABECERA -->
     <header>
-      <section class="cabecera">
-        <!-- CABECERA -->
-        <div class="logo">
-          <!--LOGO-->
-          <img
-            src="./imagenes/461595352_27773043162282910_3274584581630370881_n.jpg"
-            alt="Logo de Lio Tech Electronics"
-            width="100"
-            height="100"
-          />
-        </div>
-        <div class="titulo">
-          <nav>
-            <!--TITULO-->
-            <li>
-              <a href="#"></a>
-              <h1>Tech Electronics</h1>
-            </li>
-          </nav>
-        </div>
-        <div class="login">
-          <!--LOGIN-->
-          <form action=".submit" method="post">
-            <label for="text"></label>
-            <input
-              type="Usuario"
-              name="Usuario"
-              id="Usuario"
-              placeholder="Usuario"
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Logo a la izquierda -->
+          <div class="col-12 col-md-3 text-start mb-2 mb-md-0">
+            <img
+              src="./imagenes/461595352_27773043162282910_3274584581630370881_n.jpg"
+              alt="Logo de Lio Tech Electronics"
+              width="100"
+              height="100"
             />
-            <label for="password"></label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Contraseña"
-            />
-            <input type="submit" value="Enviar" />
-          </form>
-        </div>
-      </section>
-      <br />
-      <section>
-        <!-- NAVEGACION -->
-        <nav>
-          <div class="navegacion">
-            <!--NAVEGACION a-->
-            <li><a href="#">Inicio</a></li>
-            <li><a href="./pages/productos.html">Productos</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-            <li>
-              <a href="./pages/acerca_de_nosotros.html">Acerca de Nosotros</a>
-            </li>
           </div>
+
+          <!-- Título centrado -->
+          <div class="col-12 col-md-6 text-center mb-2 mb-md-0">
+            <h1 class="mb-0">Lio Tech Electronics</h1>
+          </div>
+
+          <!-- Login a la derecha -->
+          <div class="col-12 col-md-3 text-end">
+            <form
+              action="login.php"
+              method="post"
+              class="d-flex justify-content-end gap-2"
+            >
+              <input
+                type="text"
+                name="usuario"
+                id="usuario"
+                class="form-control form-control-sm"
+                placeholder="Usuario"
+                required
+              />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="form-control form-control-sm"
+                placeholder="Contraseña"
+                required
+              />
+              <input
+                type="submit"
+                value="Ingresar"
+                class="btn btn-outline-primary"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- NAVEGACION -->
+      <section>
+        <nav>
+          <ul class="nav nav-pills btn btn">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Productos</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Celulares</a></li>
+                <li><a class="dropdown-item" href="#">Consolas</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Notebooks</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Drones</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/promociones.html"
+                >Promociones</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="flex-sm-fill text-sm-center nav-link"
+                href="./pages/contacto.html"
+                >Contacto</a
+              >
+            </li>
+            <li>
+              <a
+                class="flex-sm-fill text-sm-center nav-link"
+                href="./pages/acerca_de_nosotros.html"
+                >Acerca de Nosotros</a
+              >
+            </li>
+          </ul>
+          >
         </nav>
       </section>
       <section>
@@ -90,19 +140,8 @@
         <!-- IMAGENES -->
         <article>
           <img src="./imagenes/Promociones.jpg" alt="Promociones" />
-          <h2><a href="./pages/promociones.html">Promociones</a></h2>
-        </article>
-        <article>
           <img src="./imagenes/medios_de_pago.jpg" alt="Medios de Pago" />
-          <h2>
-            <a href="./pages/medios_de_pago.html">Medios de Pago</a>
-          </h2>
-        </article>
-        <article>
           <img src="./imagenes/Envios.jpg" alt="" />
-          <h2>
-            <a href="./pages/formas_de_entrega.html">Formas de Entrega</a>
-          </h2>
         </article>
       </section>
       <aside>

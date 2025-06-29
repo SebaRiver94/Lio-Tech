@@ -1,0 +1,22 @@
+.body {
+  font-family: "orbitron", serif;
+  background-color: #22af41;
+  color: #0a2b15;
+}
+.container {
+  margin-bottom: 25px;
+}
+.footer {
+  background-color: #002b0d;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.card-text {
+  font-weight: 300;
+}
+.breve-resumen {
+  font-weight: 600;
+  font-size: 1.5em;
+  text-align: center;
+}

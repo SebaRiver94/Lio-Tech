@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,10 +22,12 @@
   <body class="body">
     <!-- CABECERA -->
     <header class="py-3">
-      <div class="container">
-        <div class="row align-items-center">
+      <div class="container-fluid px-4">
+        <div
+          class="d-flex flex-column flex-md-row align-items-center justify-content-between"
+        >
           <!-- Logo + Título -->
-          <div class="col-12 col-md-6 d-flex align-items-center mb-3 mb-md-0">
+          <div class="col-12 col-md-6 d-flex mb-3 mb-md-0">
             <img
               src="./imagenes/461595352_27773043162282910_3274584581630370881_n.jpg"
               alt="Logo"
@@ -72,59 +74,72 @@
       </div>
 
       <!-- NAVEGACION -->
-      <section class="container">
-        <div class="row align-items-center">
-          <!-- Menú de navegación -->
-          <div class="col-12 col-md-8">
-            <nav>
-              <ul class="nav nav-pills fs-5 flex-wrap">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    href="#"
-                    role="button"
-                    aria-expanded="false"
-                  >
-                    Productos
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Celulares</a></li>
-                    <li><a class="dropdown-item" href="#">Consolas</a></li>
-                    <li><a class="dropdown-item" href="#">Notebooks</a></li>
-                    <li><a class="dropdown-item" href="#">Tablets</a></li>
-                    <li><a class="dropdown-item" href="#">Auriculares</a></li>
-                    <li><a class="dropdown-item" href="#">Drones</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/promociones.html"
-                    >Promociones</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/acerca_de_nosotros.html"
-                    >Acerca de Nosotros</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <!-- Buscador alineado a la derecha -->
-          <div
-            class="col-12 col-md-4 d-flex justify-content-md-end mt-3 mt-md-0"
+      <nav class="navbar navbar-expand-md">
+        <div class="container">
+          <a class="navbar-brand d-none" href="#"></a>
+          <button
+            class="navbar-toggler d-flex d-md-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- MENÚ -->
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarNav"
+          >
+            <ul
+              class="navbar-nav nav-pills fs-5 flex-wrap gap-2"
+              style="width: 100%"
+            >
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  Productos
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Celulares</a></li>
+                  <li><a class="dropdown-item" href="#">Consolas</a></li>
+                  <li><a class="dropdown-item" href="#">Notebooks</a></li>
+                  <li><a class="dropdown-item" href="#">Tablets</a></li>
+                  <li><a class="dropdown-item" href="#">Auriculares</a></li>
+                  <li><a class="dropdown-item" href="#">Drones</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/promociones.html"
+                  >Promociones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/acerca_de_nosotros.html"
+                  >Acerca de Nosotros</a
+                >
+              </li>
+            </ul>
+            <!--BUSCADOR-->
             <form
-              class="d-flex gap-2"
+              class="d-flex gap-2 ms-lg-3 mt-3- mt-lg-0"
               role="search"
-              style="max-width: 300px; width: 100%"
+              style="max-width: 300px width: 100%"
+              action="search.php"
             >
               <input
                 class="form-control form-control-sm"
@@ -132,13 +147,16 @@
                 placeholder="Buscar..."
                 aria-label="Buscar"
               />
-              <button class="btn btn-outline-primary btn-sm" type="submit">
+              <button
+                class="btn btn-outline-primary btn-sm justify-content-md-end"
+                type="submit"
+              >
                 Buscar
               </button>
             </form>
           </div>
         </div>
-      </section>
+      </nav>
     </header>
 
     <main>
@@ -152,18 +170,19 @@
           generación.
         </p>
       </section>
-      <div class="container my-4">
-        <div class="row">
-          <!-- Tarjetas ocupando 8 columnas -->
-          <div class="col-md-8 d-flex gap-3 flex-wrap justify-content-center">
-            <div class="card text-center" style="width: 25rem">
+
+      <!-- TARJETAS -->
+      <section class="container my-4">
+        <div class="row g-4 justify-content-center">
+          <article class="col-md-4">
+            <div class="card text-center">
               <img
-                src="./imagenes/medios_de_pago.jpg"
+                src="./imagenes/Medios de Pagos 2.png"
                 class="card-img-top"
                 alt="Medios de Pago"
               />
               <div class="card-body">
-                <h5 class="card-title">Medios de Pagos</h5>
+                <h3 class="card-title">Medios de Pagos</h3>
                 <p class="card-text">
                   Simplifica tus pagos: Con nuestros flexibles medios de pago,
                   tus transacciones son más rápidas y seguras. Elige la opción
@@ -173,48 +192,54 @@
                 <a href="#" class="btn btn-primary">Ir</a>
               </div>
             </div>
+          </article>
 
-            <div class="card text-center" style="width: 25rem">
+          <article class="col-md-4">
+            <div class="card text-center">
               <img
                 src="./imagenes/Envios.jpg"
                 class="card-img-top"
                 alt="Envios"
               />
               <div class="card-body">
-                <h5 class="card-title">Envios</h5>
+                <h3 class="card-title">Envios</h3>
                 <p class="card-text">
                   Recibe donde quieras, cuando quieras: Ofrecemos envíos rápidos
                   y seguros a todo el país. Tu pedido llegará a tu puerta con la
                   eficiencia y el cuidado que mereces, estés donde estés.
                 </p>
-                <br />
                 <a href="#" class="btn btn-primary">Ir</a>
               </div>
             </div>
-          </div>
+          </article>
 
-          <!-- Publicidad ocupando 4 columnas -->
-          <div class="col-md-4 d-flex gap-3">
-            <img
-              src="./imagenes/publicidad-dos.jpg"
-              alt="Publicidad 2"
-              class="img-fluid rounded"
-              style="width: 48%"
-            />
-            <img
-              src="./imagenes/publicidada-3.jpg"
-              alt="Publicidad 3"
-              class="img-fluid rounded"
-              style="width: 48%"
-            />
-          </div>
+          <article class="col-md-4">
+            <div class="card text-center">
+              <img
+                src="./imagenes/Soporte Tecnico.png"
+                class="card-img-top"
+                alt="Soporte Técnico"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Soporte Técnico</h3>
+                <p>
+                  Contá con nuestro soporte técnico especializado para resolver
+                  cualquier inconveniente con tus productos. Te brindamos
+                  asistencia rápida, personalizada y efectiva.
+                </p>
+                <a href="#" class="btn btn-primary">Ir</a>
+              </div>
+            </div>
+          </article>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer class="footer">
       <section class="pie-pagina container py-3">
-        <div class="row text-center text-md-start align-items-center">
+        <div
+          class="row text-center text-md-start align-items-center justify-content-between"
+        >
           <!-- Columna 1: Copyright -->
           <div class="col-12 col-md-4 mb-2 mb-md-0">
             <p class="mb-0">

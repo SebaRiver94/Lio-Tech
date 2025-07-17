@@ -1,245 +1,164 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lio Tech Electronics</title>
-    <!-- CSS de Bootstrap -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Exo+2&family=Orbitron&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Tu CSS -->
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <!-- JS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
+<html lang="en">
 
-  <body class="body">
-    <!-- CABECERA -->
-    <header class="py-3">
-      <div class="container-fluid px-4">
-        <div
-          class="d-flex flex-column flex-md-row align-items-center justify-content-between"
-        >
-          <!-- Logo + Título -->
-          <div class="col-12 col-md-6 d-flex mb-3 mb-md-0">
-            <img
-              src="../imagenes/461595352_27773043162282910_3274584581630370881_n.jpg"
-              alt="Logo"
-              width="80"
-              height="80"
-              class="me-3"
-            />
-            <span class="text-decoration-underline">
-              <h1 class="mb-0">Lio Tech Electronics</h1>
-            </span>
-          </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lio Tech Electronics</title>
+  <!-- CSS de Bootstrap -->
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Orbitron&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="../styles/styles.css" />
+</head>
 
-          <!-- Login -->
-          <div class="col-12 col-md-6 text-md-end">
-            <form
-              action="login.php"
-              method="post"
-              class="d-flex gap-2 justify-content-md-end form-control-sm"
-            >
-              <input
-                type="text"
-                name="usuario"
-                class="flex-grow-1 flex-md-grow-0"
-                placeholder="Usuario"
-                required
-                style="min-width: 120px"
-              />
-              <input
-                type="password"
-                name="password"
-                class="flex-grow-1 flex-md-grow-0"
-                placeholder="Contraseña"
-                required
-                style="min-width: 120px"
-              />
-              <input
-                type="submit"
-                value="Ingresar"
-                class="btn btn-primary btn-sm"
-              />
-            </form>
-          </div>
+<body class="body">
+  <!-- CABECERA -->
+  <header class="py-3">
+    <div class="container-fluid px-4">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <!-- Logo + Título -->
+        <div class="col-12 col-md-6 d-flex mb-3 mb-md-0">
+          <img src="../imagenes/461595352_27773043162282910_3274584581630370881_n.jpg" alt="Logo" width="80" height="80"
+            class="me-3" />
+          <span class="text-decoration-underline">
+            <h1 class="mb-0">Lio Tech Electronics</h1>
+          </span>
+        </div>
+
+        <!-- Login -->
+        <div class="col-12 col-md-6 text-md-end">
+          <form action="login.php" method="post" class="d-flex gap-2 justify-content-md-end form-control-sm">
+            <input type="text" name="usuario" class="flex-grow-1 flex-md-grow-0" placeholder="Usuario" required
+              style="min-width: 120px" />
+            <input type="password" name="password" class="flex-grow-1 flex-md-grow-0" placeholder="Contraseña" required
+              style="min-width: 120px" />
+            <input type="submit" value="Ingresar" class="btn btn-primary btn-sm" />
+          </form>
         </div>
       </div>
+    </div>
 
-      <!-- NAVEGACION -->
-      <nav class="navbar navbar-expand-md">
-        <div class="container">
-          <a class="navbar-brand d-none" href="#"></a>
-          <button
-            class="navbar-toggler d-flex d-md-none"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- MENÚ -->
-          <div
-            class="collapse navbar-collapse justify-content-between"
-            id="navbarNav"
-          >
-            <ul
-              class="navbar-nav nav-pills fs-5 flex-wrap gap-2"
-              style="width: 100%"
-            >
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./promociones.html">Promociones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Acerca de Nosotros</a>
-              </li>
-            </ul>
-            <!--BUSCADOR-->
-            <form
-              class="d-flex gap-2 ms-lg-3 mt-3- mt-lg-0"
-              role="search"
-              style="max-width: 300px"
-              action="search.php"
-            >
-              <input
-                class="form-control form-control-sm"
-                type="search"
-                placeholder="Buscar..."
-                aria-label="Buscar"
-              />
-              <button
-                class="btn btn-primary btn-sm justify-content-md-end"
-                type="submit"
-              >
-                Buscar
-              </button>
-            </form>
-          </div>
+    <!-- NAVEGACION -->
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <a class="navbar-brand d-none" href="#"></a>
+        <button class="navbar-toggler d-flex d-md-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- MENÚ -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+          <ul class="navbar-nav nav-pills fs-5 flex-wrap gap-2" style="width: 100%">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./promociones.html">Promociones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Acerca de Nosotros</a>
+            </li>
+          </ul>
+          <!--BUSCADOR-->
+          <form class="d-flex gap-2 ms-lg-3 mt-3- mt-lg-0" role="search" style="max-width: 300px" action="search.php">
+            <input class="form-control form-control-sm" type="search" placeholder="Buscar..." aria-label="Buscar" />
+            <button class="btn btn-primary btn-sm justify-content-md-end" type="submit">
+              Buscar
+            </button>
+          </form>
         </div>
-      </nav>
-    </header>
-    <main class="contenido-acerca">
-      <!--acerca-de-nosotros-->
-      <aside>
-        <h1 class="titulo">Acerca de Nosotros</h1>
-        <p>
-          En Lio Tech Electronics, nos especializamos en ofrecer productos
-          electrónicos de alta calidad, con la más reciente tecnología del
-          mercado. Desde nuestros inicios, nos propusimos acercar la innovación
-          a las personas, brindando soluciones que no solo sean funcionales y
-          estéticamente atractivas, sino también accesibles para todos. Creemos
-          firmemente que la tecnología debe facilitar la vida diaria,
-          simplificar tareas y abrir nuevas posibilidades en la comunicación, el
-          entretenimiento y el trabajo. Nos esforzamos día a día por mantenernos
-          a la vanguardia, evaluando constantemente las últimas tendencias del
-          sector para asegurarnos de ofrecer siempre lo mejor a nuestros
-          clientes.
-        </p>
-        <h2 class="titulo">Nuestro Proyecto</h2>
-        <p>
-          Nuestro proyecto tiene como eje principal la creación y
-          comercialización de dispositivos electrónicos accesibles, eficientes y
-          sostenibles. Trabajamos con marcas reconocidas y desarrollamos
-          alianzas estratégicas que nos permiten ofrecer productos innovadores,
-          originales y con garantía. Además, apostamos por modelos de venta a
-          pedido, lo que nos permite adaptarnos a las necesidades específicas de
-          cada cliente y reducir el impacto ambiental asociado al almacenamiento
-          innecesario. La sostenibilidad es parte de nuestro compromiso:
-          buscamos minimizar residuos electrónicos, promovemos el uso de
-          materiales duraderos y apostamos a la eficiencia energética en todos
-          nuestros productos.
-        </p>
+      </div>
+    </nav>
+  </header>
+  <main class="contenido-acerca">
+    <!--acerca-de-nosotros-->
+    <aside>
+      <h1 class="titulo">Acerca de Nosotros</h1>
+      <p>
+        En Lio Tech Electronics, nos especializamos en ofrecer productos
+        electrónicos de alta calidad, con la más reciente tecnología del
+        mercado. Desde nuestros inicios, nos propusimos acercar la innovación
+        a las personas, brindando soluciones que no solo sean funcionales y
+        estéticamente atractivas, sino también accesibles para todos. Creemos
+        firmemente que la tecnología debe facilitar la vida diaria,
+        simplificar tareas y abrir nuevas posibilidades en la comunicación, el
+        entretenimiento y el trabajo. Nos esforzamos día a día por mantenernos
+        a la vanguardia, evaluando constantemente las últimas tendencias del
+        sector para asegurarnos de ofrecer siempre lo mejor a nuestros
+        clientes.
+      </p>
+      <h2 class="titulo">Nuestro Proyecto</h2>
+      <p>
+        Nuestro proyecto tiene como eje principal la creación y
+        comercialización de dispositivos electrónicos accesibles, eficientes y
+        sostenibles. Trabajamos con marcas reconocidas y desarrollamos
+        alianzas estratégicas que nos permiten ofrecer productos innovadores,
+        originales y con garantía. Además, apostamos por modelos de venta a
+        pedido, lo que nos permite adaptarnos a las necesidades específicas de
+        cada cliente y reducir el impacto ambiental asociado al almacenamiento
+        innecesario. La sostenibilidad es parte de nuestro compromiso:
+        buscamos minimizar residuos electrónicos, promovemos el uso de
+        materiales duraderos y apostamos a la eficiencia energética en todos
+        nuestros productos.
+      </p>
 
-        <h2 class="titulo">Nuestro Equipo</h2>
-        <p>
-          Detrás de cada producto y cada proyecto, hay un equipo diverso,
-          apasionado y comprometido. Contamos con profesionales en áreas como
-          ingeniería electrónica, diseño industrial, atención al cliente,
-          logística y marketing digital. Cada miembro de Lio Tech Electronics
-          aporta no solo sus conocimientos técnicos, sino también una mirada
-          creativa y humana, que nos permite entender las verdaderas necesidades
-          de quienes confían en nosotros. Nos une una misma visión: crear
-          tecnología que realmente haga la diferencia, sin perder de vista la
-          calidad, la responsabilidad y la cercanía con cada cliente.
-        </p>
-      </aside>
-    </main>
-    <footer class="footer">
-      <section class="pie-pagina container py-3">
-        <div
-          class="row text-center text-md-start align-items-center justify-content-between"
-        >
-          <!-- Columna 1: Copyright -->
-          <div class="col-12 col-md-4 mb-2 mb-md-0">
-            <p class="mb-0">
-              © 2025 Lio Tech Electronics. Todos los derechos reservados.
-            </p>
-          </div>
-
-          <!-- Columna 2: Términos -->
-          <div class="col-12 col-md-4 mb-2 mb-md-0 text-center">
-            <a
-              href="./pages/aviso_legal.html"
-              class="text-white text-decoration-underline"
-            >
-              Términos y condiciones
-            </a>
-          </div>
-
-          <!-- Columna 3: Redes Sociales -->
-          <div class="col-12 col-md-4 mb-2 mb-md-0">
-            <ul
-              class="list-unstyled d-flex justify-content-center justify-content-md-end gap-3 mb-0"
-            >
-              <li>
-                <a
-                  href="https://www.facebook.com/LioTechElectronics"
-                  class="text-white"
-                  target="_blank"
-                  >Facebook</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/LioTechElectronics"
-                  class="text-white"
-                  target="_blank"
-                  >Instagram</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.twitter.com/LioTechElectronics"
-                  class="text-white"
-                  target="_blank"
-                  >Twitter</a
-                >
-              </li>
-            </ul>
-          </div>
+      <h2 class="titulo">Nuestro Equipo</h2>
+      <p>
+        Detrás de cada producto y cada proyecto, hay un equipo diverso,
+        apasionado y comprometido. Contamos con profesionales en áreas como
+        ingeniería electrónica, diseño industrial, atención al cliente,
+        logística y marketing digital. Cada miembro de Lio Tech Electronics
+        aporta no solo sus conocimientos técnicos, sino también una mirada
+        creativa y humana, que nos permite entender las verdaderas necesidades
+        de quienes confían en nosotros. Nos une una misma visión: crear
+        tecnología que realmente haga la diferencia, sin perder de vista la
+        calidad, la responsabilidad y la cercanía con cada cliente.
+      </p>
+    </aside>
+  </main>
+  <footer class="footer">
+    <section class="pie-pagina container py-3">
+      <div class="row text-center text-md-start align-items-center justify-content-between">
+        <!-- Columna 1: Copyright -->
+        <div class="col-12 col-md-4 mb-2 mb-md-0">
+          <p class="mb-0">
+            © 2025 Lio Tech Electronics. Todos los derechos reservados.
+          </p>
         </div>
-      </section>
-    </footer>
-  </body>
+
+        <!-- Columna 2: Términos -->
+        <div class="col-12 col-md-4 mb-2 mb-md-0 text-center">
+          <a href="./pages/aviso_legal.html" class="text-white text-decoration-underline">
+            Términos y condiciones
+          </a>
+        </div>
+
+        <!-- Columna 3: Redes Sociales -->
+        <div class="col-12 col-md-4 mb-2 mb-md-0">
+          <ul class="list-unstyled d-flex justify-content-center justify-content-md-end gap-3 mb-0">
+            <li>
+              <a href="https://www.facebook.com/LioTechElectronics" class="text-white" target="_blank">Facebook</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/LioTechElectronics" class="text-white" target="_blank">Instagram</a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com/LioTechElectronics" class="text-white" target="_blank">Twitter</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

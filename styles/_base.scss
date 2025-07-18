@@ -1,0 +1,24 @@
+@use 'variables' as v;
+
+body {
+  font-family: v.$font-family;
+  background-color: v.$fourth-color;
+  color: v.$primary-color;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: v.$secondary-color;
+  text-decoration: v.$text-sin;
+
+  &:hover {
+    text-decoration: v.$text-subrayado;
+    color: v.$primary-color;
+  }
+}
+
+section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}

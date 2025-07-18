@@ -1,0 +1,38 @@
+// Tipografías
+$font-family: "Orbitron", sans-serif;
+$text-subrayado: underline;
+$text-sin: none;
+
+// Colores principales
+$primary-color: #4b0f1f;
+$secondary-color: #6a0dad;
+$tertiary-color: #f74574;
+$fourth-color: #f5f5f5;
+$color-hover: #f74574;
+$border-color: #ffb0c5;
+
+// Colores de texto específicos
+$card-text-color: #333;
+$heading-color: $primary-color;
+$link-color: $secondary-color;
+$link-hover-color: $primary-color;
+
+// Sombras
+$shadow-soft: 0 4px 8px rgba(0, 0, 0, 0.1);
+$card-shadow: $shadow-soft;
+
+// Padding
+$padding-default: 1rem 0;
+$padding-button: 10px 20px;
+$padding-button-sm: 8px 16px;
+
+// Tamaños de fuente
+$font-size-large: 1.5em;
+$font-size-medium: 1em;
+$font-size-small: 0.9rem;
+$font-size-caption: 1rem;
+
+// Pesos tipográficos
+$font-weight-light: 300;
+$font-weight-regular: 500;
+$font-weight-semibold: 600;

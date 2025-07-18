@@ -1,0 +1,31 @@
+@use 'variables' as v;
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%;
+}
+
+.carousel-inner img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.carousel-caption {
+  color: v.$fourth-color;
+  border-radius: 8px;
+  bottom: 20px;
+
+  h5 {
+    font-size: v.$font-size-medium;
+  }
+
+  p {
+    font-size: v.$font-size-small;
+  }
+}

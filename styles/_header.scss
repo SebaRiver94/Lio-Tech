@@ -1,0 +1,18 @@
+@use 'variables' as v;
+
+header {
+  background-color: v.$primary-color;
+  color: v.$fourth-color;
+  padding: v.$font-size-caption 0;
+}
+
+.navbar-nav .nav-link {
+  color: v.$tertiary-color;
+  font-weight: v.$font-weight-regular;
+
+  &:hover,
+  &:focus {
+    color: v.$tertiary-color;
+    text-decoration: v.$text-subrayado;
+  }
+}

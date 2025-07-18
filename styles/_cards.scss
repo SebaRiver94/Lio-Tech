@@ -1,0 +1,11 @@
+@use 'variables' as v;
+
+.card-title {
+  color: v.$secondary-color;
+  font-weight: v.$font-weight-semibold;
+}
+
+.card-text {
+  font-weight: v.$font-weight-light;
+  color: v.$card-text-color;
+}

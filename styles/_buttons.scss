@@ -1,0 +1,25 @@
+@use 'variables' as v;
+
+.container-button,
+.navbar-toggler {
+  background-color: v.$tertiary-color;
+  border: solid 1.5px v.$border-color;
+  padding: v.$padding-button;
+  font-size: v.$font-size-medium;
+  cursor: pointer;
+  color: v.$fourth-color;
+}
+
+.btn-primary {
+  background-color: v.$tertiary-color;
+  border-color: v.$secondary-color;
+
+  &:hover {
+    background-color: v.$tertiary-color;
+    border-color: v.$secondary-color;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(106, 13, 173, 0.5);
+  }
+}

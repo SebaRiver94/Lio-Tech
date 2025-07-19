@@ -1,11 +1,33 @@
 @use 'variables' as v;
 
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; // Para que tome el 100% del contenedor col-md-4 y que sean iguales
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .card-title {
   color: v.$secondary-color;
   font-weight: v.$font-weight-semibold;
+  margin-bottom: 0.5rem;
 }
 
 .card-text {
+  flex-grow: 1;  // Esto hace que el párrafo estire y empuje el botón hacia abajo
   font-weight: v.$font-weight-light;
   color: v.$card-text-color;
+  margin-bottom: 1rem; // espacio entre párrafo y botón
+}
+
+.btn {
+  margin-top: auto;  // El botón siempre pegado abajo
+  align-self: center; // mantiene el tamaño original y lo alinea al centro
+  padding: v.$padding-button; // padding del botón
+  width: auto; // asegúrate que no tome todo el ancho
 }

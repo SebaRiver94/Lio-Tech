@@ -1,0 +1,6 @@
+@mixin heading-style($size, $color, $mb: 1rem, $underline: none) {
+  font-size: $size;
+  color: $color;
+  margin-bottom: $mb;
+  text-decoration: $underline;
+}

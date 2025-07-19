@@ -22,3 +22,14 @@ section {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+h2 {
+  font-size: v.$font-size-xl;
+  color: v.$secondary-color;
+  margin-bottom: 1rem;
+  text-decoration: v.$text-subrayado;
+}
+h3 {
+  font-size: v.$font-size-large;
+  color: v.$heading-color;
+  margin-bottom: 0.5rem;
+}

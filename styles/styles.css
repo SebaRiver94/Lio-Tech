@@ -37,6 +37,20 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  animation: fadeIn 0.6s ease-out both;
+}
+
 header {
   background-color: #4b0f1f;
   color: #f5f5f5;
@@ -124,6 +138,14 @@ header {
   text-decoration: none;
 }
 
+.btn-secundario, .btn-primary {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 .container-button,
 .navbar-toggler {
   background-color: #f74574;
@@ -137,13 +159,19 @@ header {
 .btn-primary {
   background-color: #f74574;
   border-color: #6a0dad;
+  color: #f5f5f5;
 }
 .btn-primary:hover {
-  background-color: #f74574;
+  background-color: rgb(244.8969072165, 20.1030927835, 79.4587628866);
   border-color: #6a0dad;
 }
 .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(106, 13, 173, 0.5);
+}
+
+.btn-secundario {
+  background-color: #6a0dad;
+  padding: 0.5rem;
 }
 
 @media (max-width: 768px) {

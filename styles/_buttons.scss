@@ -1,4 +1,6 @@
 @use 'variables' as v;
+@use 'sass:color';
+@use 'sass:math';
 
 // Placeholder reutilizable
 %boton-generico {
@@ -30,10 +32,9 @@ $padding-base: 1rem;
   color: v.$fourth-color;
 
   &:hover {
-    background-color: darken(v.$tertiary-color, 10%);
+    background-color: color.adjust(v.$tertiary-color, $lightness: -10%);
     border-color: v.$secondary-color;
   }
-
   &:focus {
     box-shadow: 0 0 0 0.2rem rgba(106, 13, 173, 0.5);
   }
@@ -43,5 +44,5 @@ $padding-base: 1rem;
 .btn-secundario {
   @extend %boton-generico;
   background-color: v.$secondary-color;
-  padding: $padding-base / 2;
+ padding: math.div($padding-base, 2);
 }

@@ -6,6 +6,10 @@ body {
   color: v.$primary-color;
   margin: 0;
   padding: 0;
+  background-image: url('../inicio/imagenes/fondo.png'); /* Asegurate de poner el path correcto */
+  background-size: cover;      /* Para que cubra todo el fondo */
+  background-position: center; /* Para centrar la imagen */
+  background-repeat: no-repeat;
 }
 
 a {
@@ -24,12 +28,12 @@ section {
 }
 h2 {
   font-size: v.$font-size-xl;
-  color: v.$secondary-color;
+  color: v.$fourth-color;
   margin-bottom: 1rem;
   text-decoration: v.$text-subrayado;
 }
 h3 {
   font-size: v.$font-size-large;
-  color: v.$heading-color;
+  color: v.$fourth-color;
   margin-bottom: 0.5rem;
 }

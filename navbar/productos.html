@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="../inicio/imagenes/favicon.png" />
+  <title>Productos - Lio Tech Electronics</title>
+  <!-- CSS de Bootstrap -->
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Orbitron&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="../styles/styles.css" />
+</head>
+
+<body class="body d-flex flex-column min-vh-100">
+  <!-- CABECERA -->
+  <header class="py-3">
+    <div class="container-fluid px-4">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <!-- Logo + Título -->
+        <div class="col-12 col-md-6 d-flex mb-3 mb-md-0">
+          <img src="../inicio/imagenes/logo.jpg" alt="Logo" width="80" height="80" class="me-3" />
+          <span class="text-decoration-underline">
+            <h1 class="mb-0">Lio Tech Electronics</h1>
+          </span>
+        </div>
+
+        <!-- Login -->
+        <div class="col-12 col-md-6 text-md-end">
+          <form action="login.php" method="post" class="d-flex gap-2 justify-content-md-end form-control-sm">
+            <input type="text" name="usuario" class="flex-grow-1 flex-md-grow-0" placeholder="Usuario" required
+              style="min-width: 120px" />
+            <input type="password" name="password" class="flex-grow-1 flex-md-grow-0" placeholder="Contraseña" required
+              style="min-width: 120px" />
+            <input type="submit" value="Ingresar" class="btn btn-primary btn-sm" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVEGACION -->
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <a class="navbar-brand d-none" href="#"></a>
+        <button class="navbar-toggler d-flex d-md-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- MENÚ -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+          <ul class="navbar-nav nav-pills fs-5 flex-wrap gap-2" style="width: 100%">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index2.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./promociones.html">Promociones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./acerca_de_nosotros.html">Acerca de Nosotros</a>
+            </li>
+          </ul>
+          <!--BUSCADOR-->
+          <form class="d-flex gap-2 ms-lg-3 mt-3- mt-lg-0" role="search" style="max-width: 300px" action="search.php">
+            <input class="form-control form-control-sm" type="search" placeholder="Buscar..." aria-label="Buscar" />
+            <button class="btn btn-primary btn-sm justify-content-md-end" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <aside class="contenido-productos">
+      <h2 class="text-center mb-4">Productos</h2>
+
+      <!-- Descripción -->
+      <div class="container mb-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <p>
+              En Lio Tech Electronics ofrecemos una amplia variedad de
+              productos tecnológicos de última generación: celulares,
+              notebooks, consolas de videojuegos, auriculares, componentes de pc y mas !
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carruseles en fila con imágenes linkeadas -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- Carrusel 1 -->
+          <div class="col-12 col-md-4 mb-4">
+            <h3 class="text-center">Celulares</h3>
+            <div id="carouselCelulares" class="carousel slide carousel-light" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="https://www.samsung.com" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagenes/S25-Ultra.png" class="d-block w-100" alt="Samsung" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Samsung</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://www.apple.com/iphone" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagenes/Iphone-16-Pro-Max.png" class="d-block w-100" alt="Appel" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Apple</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://www.motorola.com" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagenes/Motorola-Razr-60-Ultra.png" class="d-block w-100"
+                      alt="Motorola Razr 60 Ultra" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Motorola</h3>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselCelulares"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselCelulares"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Carrusel 2 -->
+          <div class="col-12 col-md-4 mb-4">
+            <h3 class="text-center">Notebooks</h3>
+            <div id="carouselNotebooks" class="carousel slide carousel-light" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="https://www.acer.com" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagenes/Notebook-Acer-PHN14.png" class="d-block w-100" alt="Acer" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Notebooks para Oficina</h3>
+
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://www.hp.com" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagenes/Hp-Victus.png" class="d-block w-100"
+                      alt="Notebook Gamer HP Victus 16-R0085CL" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Notebooks para Gaming</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://www.thunderobot.com" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagenes/Thunderobot.png" class="d-block w-100"
+                      alt="Notebook Gamer Thunderobot 911MT" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Notebook para Diseño</h3>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselNotebooks"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselNotebooks"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Carrusel 3 -->
+          <div class="col-12 col-md-4 mb-4">
+            <h3 class="text-center">Smartwatches</h3>
+            <div id="carouselSmartwatches" class="carousel slide carousel-light" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="https://www.samsung.com/galaxy-watch" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagenes/S25-Ultra.png" class="d-block w-100" alt="Samsung Watch" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Samsung Watch</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://www.apple.com/apple-watch" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagenes/S25-Ultra.png" class="d-block w-100" alt="Apple Watch" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Apple Watch</h3>
+
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://www.mi.com/global/xiaomi-watch-2-pro" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagenes/S25-Ultra.png" class="d-block w-100" alt="Xiaomi Watch" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Xiaomi Watch</h3>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselSmartwatches"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselSmartwatches"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- FILA NUEVA -->
+          <div class="w-100"></div>
+
+          <!-- Carrusel 4 -->
+          <div class="col-12 col-md-4 mb-4">
+            <h3 class="text-center">Auriculares</h3>
+            <div id="carouselAuriculares" class="carousel slide carousel-light" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="https://www.samsung.com/galaxy-buds" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagenes/Auriculares JBL.png" class="d-block w-100" alt="" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Auriculares Over-ear</h3>
+
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://www.apple.com/airpods" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagenes/Auriculares JBL.png" class="d-block w-100" alt="AirPods Pro 2" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Auriculares In-ear</h3>
+                  </div>
+                </div>
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselAuriculares"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselAuriculares"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Carrusel 5 -->
+          <div class="col-12 col-md-4 mb-4">
+            <h3 class="text-center">Accesorios</h3>
+            <div id="carouselAccesorios" class="carousel slide carousel-light" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="https://www.samsung.com" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagenes/Parlante Ecopower.png" class="d-block w-100" alt="Cargador GaN" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Cargador GaN 100W</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://www.anker.com" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagenes/Parlante Ecopower.png" class="d-block w-100" alt="Power Bank Anker" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Power Bank Anker 20000mAh</h3>
+
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://www.apple.com" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagenes/Parlante Ecopower.png" class="d-block w-100" alt="Soporte Magsafe" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Soporte para Auto Magsafe</h3>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselAccesorios"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselAccesorios"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Carrusel 6 -->
+          <div class="col-12 col-md-4 mb-4">
+            <h3 class="text-center">Accesorios Extra</h3>
+            <div id="carouselAccesorios2" class="carousel slide carousel-light" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="https://www.samsung.com" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagenes/Parlante Ecopower.png" class="d-block w-100" alt="Cargador GaN" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Cargador GaN 100W</h3>
+
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://www.anker.com" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagenes/Parlante Ecopower.png" class="d-block w-100" alt="Power Bank Anker" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Power Bank Anker 20000mAh</h3>
+
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://www.apple.com" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagenes/Parlante Ecopower.png" class="d-block w-100" alt="Soporte Magsafe" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Soporte para Auto Magsafe</h3>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselAccesorios2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselAccesorios2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <section class="pie-pagina container-fluid px-4 py-3">
+      <div class="row text-center text-md-start align-items-center justify-content-between">
+        <!-- Columna 1: Copyright -->
+        <div class="col-12 col-md-4 mb-2 mb-md-0">
+          <p class="mb-0">
+            © 2025 Lio Tech Electronics. Todos los derechos reservados.
+          </p>
+        </div>
+
+        <!-- Columna 2: Términos -->
+        <div class="col-12 col-md-4 mb-2 mb-md-0 text-center">
+          <a href="../inicio/tyc.html" target="_blank" rel="noopener noreferrer"
+            class="text-white text-decoration-underline">
+            Términos y condiciones
+          </a>
+        </div>
+
+        <!-- Columna 3: Redes Sociales -->
+        <div class="col-12 col-md-4 mb-2 mb-md-0">
+          <ul class="list-unstyled d-flex justify-content-center justify-content-md-end gap-3 mb-0">
+            <li>
+              <a href="https://www.facebook.com/LioTechElectronics" class="text-white" target="_blank">Facebook</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/LioTechElectronics" class="text-white" target="_blank">Instagram</a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com/LioTechElectronics" class="text-white" target="_blank">Twitter</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

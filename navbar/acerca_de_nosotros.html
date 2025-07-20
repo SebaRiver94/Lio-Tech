@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lio Tech Electronics</title>
+  <link rel="icon" type="image/png" href="../inicio/imagenes/favicon.png" />
+  <title>Acerca de Nosotros - Lio Tech Electronics</title>
   <!-- CSS de Bootstrap -->
   <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Orbitron&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -19,8 +20,7 @@
       <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
         <!-- Logo + Título -->
         <div class="col-12 col-md-6 d-flex mb-3 mb-md-0">
-          <img src="../imagenes/461595352_27773043162282910_3274584581630370881_n.jpg" alt="Logo" width="80" height="80"
-            class="me-3" />
+          <img src="../inicio/imagenes/logo.jpg" alt="Logo" width="80" height="80" class="me-3" />
           <span class="text-decoration-underline">
             <h1 class="mb-0">Lio Tech Electronics</h1>
           </span>
@@ -60,10 +60,10 @@
               <a class="nav-link" href="./promociones.html">Promociones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./acerca_de_nosotros.html">Acerca de Nosotros</a>
+              <a class="nav-link" href="#">Acerca de Nosotros</a>
             </li>
           </ul>
           <!--BUSCADOR-->
@@ -77,36 +77,50 @@
       </div>
     </nav>
   </header>
-  <main class="flex-grow-1">
-    <!-- CONTENIDO PRINCIPAL -->
-    <aside class="formulario-contacto">
-      <h1>Dejanos tu mensaje</h1>
-      <form class="container mt-5" style="max-width: 600px">
-        <h2 class="text-center mb-4">Contacto</h2>
+  <main class="contenido-acerca flex-grow-1">
+    <!--acerca-de-nosotros-->
+    <aside>
+      <h1 class="titulo">Acerca de Nosotros</h1>
+      <p>
+        En Lio Tech Electronics, nos especializamos en ofrecer productos
+        electrónicos de alta calidad, con la más reciente tecnología del
+        mercado. Desde nuestros inicios, nos propusimos acercar la innovación
+        a las personas, brindando soluciones que no solo sean funcionales y
+        estéticamente atractivas, sino también accesibles para todos. Creemos
+        firmemente que la tecnología debe facilitar la vida diaria,
+        simplificar tareas y abrir nuevas posibilidades en la comunicación, el
+        entretenimiento y el trabajo. Nos esforzamos día a día por mantenernos
+        a la vanguardia, evaluando constantemente las últimas tendencias del
+        sector para asegurarnos de ofrecer siempre lo mejor a nuestros
+        clientes.
+      </p>
+      <h2 class="titulo">Nuestro Proyecto</h2>
+      <p>
+        Nuestro proyecto tiene como eje principal la creación y
+        comercialización de dispositivos electrónicos accesibles, eficientes y
+        sostenibles. Trabajamos con marcas reconocidas y desarrollamos
+        alianzas estratégicas que nos permiten ofrecer productos innovadores,
+        originales y con garantía. Además, apostamos por modelos de venta a
+        pedido, lo que nos permite adaptarnos a las necesidades específicas de
+        cada cliente y reducir el impacto ambiental asociado al almacenamiento
+        innecesario. La sostenibilidad es parte de nuestro compromiso:
+        buscamos minimizar residuos electrónicos, promovemos el uso de
+        materiales duraderos y apostamos a la eficiencia energética en todos
+        nuestros productos.
+      </p>
 
-        <!-- Nombre -->
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" />
-        </div>
-
-        <!-- Email -->
-        <div class="mb-3">
-          <label for="email" class="form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="email" placeholder="tuemail@example.com" />
-        </div>
-
-        <!-- Mensaje -->
-        <div class="mb-3">
-          <label for="mensaje" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribí tu consulta aquí..."></textarea>
-        </div>
-
-        <!-- Botón -->
-        <div class="text-center">
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
-      </form>
+      <h2 class="titulo">Nuestro Equipo</h2>
+      <p>
+        Detrás de cada producto y cada proyecto, hay un equipo diverso,
+        apasionado y comprometido. Contamos con profesionales en áreas como
+        ingeniería electrónica, diseño industrial, atención al cliente,
+        logística y marketing digital. Cada miembro de Lio Tech Electronics
+        aporta no solo sus conocimientos técnicos, sino también una mirada
+        creativa y humana, que nos permite entender las verdaderas necesidades
+        de quienes confían en nosotros. Nos une una misma visión: crear
+        tecnología que realmente haga la diferencia, sin perder de vista la
+        calidad, la responsabilidad y la cercanía con cada cliente.
+      </p>
     </aside>
   </main>
 
@@ -122,7 +136,8 @@
 
         <!-- Columna 2: Términos -->
         <div class="col-12 col-md-4 mb-2 mb-md-0 text-center">
-          <a href="./tyc.html" class="text-white text-decoration-underline">
+          <a href="../inicio/tyc.html" target="_blank" rel="noopener noreferrer"
+            class="text-white text-decoration-underline">
             Términos y condiciones
           </a>
         </div>

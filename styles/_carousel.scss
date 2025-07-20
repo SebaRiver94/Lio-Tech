@@ -21,11 +21,9 @@
   border-radius: 8px;
   bottom: 20px;
 
-  h5 {
-    font-size: v.$font-size-medium;
-  }
-
-  p {
-    font-size: v.$font-size-small;
+}.carousel {
+  h3, {
+    color: v.$fourth-color;
+    text-decoration: v.$text-sin;
   }
 }

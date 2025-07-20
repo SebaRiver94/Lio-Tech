@@ -1,5 +1,17 @@
 @use 'variables' as v;
 
+// Placeholder reutilizable
+%boton-generico {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+// Variable para operador
+$padding-base: 1rem;
+
 .container-button,
 .navbar-toggler {
   background-color: v.$tertiary-color;
@@ -10,16 +22,26 @@
   color: v.$fourth-color;
 }
 
+// Botón primario
 .btn-primary {
+  @extend %boton-generico;
   background-color: v.$tertiary-color;
   border-color: v.$secondary-color;
+  color: v.$fourth-color;
 
   &:hover {
-    background-color: v.$tertiary-color;
+    background-color: darken(v.$tertiary-color, 10%);
     border-color: v.$secondary-color;
   }
 
   &:focus {
     box-shadow: 0 0 0 0.2rem rgba(106, 13, 173, 0.5);
   }
+}
+
+// Botón secundario
+.btn-secundario {
+  @extend %boton-generico;
+  background-color: v.$secondary-color;
+  padding: $padding-base / 2;
 }

@@ -4,12 +4,21 @@
   display: flex;
   flex-direction: column;
   height: 100%; // Para que tome el 100% del contenedor col-md-4 y que sean iguales
+   opacity: 1;
+  filter: brightness(1.1) contrast(1.1);
+  transition: filter 0.3s ease;
+
+  &:hover {
+    filter: brightness(1.2) contrast(1.2);
+  }
 }
+
 
 .card-body {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  ;
 }
 
 .card-title {
@@ -18,16 +27,19 @@
   margin-bottom: 0.5rem;
 }
 
-.card-text {
-  flex-grow: 1;  // Esto hace que el párrafo estire y empuje el botón hacia abajo
-  font-weight: v.$font-weight-light;
-  color: v.$card-text-color;
-  margin-bottom: 1rem; // espacio entre párrafo y botón
-}
-
 .btn {
   margin-top: auto;  // El botón siempre pegado abajo
   align-self: center; // mantiene el tamaño original y lo alinea al centro
   padding: v.$padding-button; // padding del botón
   width: auto; // asegúrate que no tome todo el ancho
 }
+
+@keyframes flotar {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-8px); }
+    100% { transform: translateY(2px); }
+  }
+
+  .flotando {
+    animation: flotar 2s ease-in-out infinite;
+  }

@@ -1,9 +1,6 @@
 @use 'variables' as v;
 
 @media (max-width: 768px) {
-  .breve-resumen {
-    font-size: 1.2em;
-  }
 
   .container-button {
     padding: v.$padding-button-sm;

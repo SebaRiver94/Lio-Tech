@@ -6,9 +6,9 @@ body {
   color: v.$primary-color;
   margin: 0;
   padding: 0;
-  background-image: url('../inicio/imagenes/fondo.png'); /* Asegurate de poner el path correcto */
-  background-size: cover;      /* Para que cubra todo el fondo */
-  background-position: center; /* Para centrar la imagen */
+  background-image: url('../inicio/imagenes/fondo.png');
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -26,6 +26,13 @@ section {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+
+h1 {
+  font-size: v.$font-size-xl;
+  color: v.$tertiary-color;
+  margin-bottom: 1rem;
+  text-decoration: v.$text-subrayado;
+}
 h2 {
   font-size: v.$font-size-xl;
   color: v.$fourth-color;
@@ -37,6 +44,14 @@ h3 {
   color: v.$fourth-color;
   margin-bottom: 0.5rem;
 }
+p {
+  color: v.$primary-color;        // Bordó fuerte (#4b0f1f)
+  font-size: 1.125rem;            // 18px (más grande que lo normal)
+  font-weight: 600;               // Semi-bold
+  line-height: 1.6;               // Buen espaciado entre líneas
+  letter-spacing: 0.2px;          // Ligera separación de letras
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -46,8 +61,4 @@ h3 {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.fade-in {
-  animation: fadeIn 0.6s ease-out both;
 }

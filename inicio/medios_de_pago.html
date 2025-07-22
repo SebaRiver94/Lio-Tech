@@ -11,6 +11,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- CSS -->
   <link rel="stylesheet" href="../styles/styles.css" />
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body class="body">
@@ -21,13 +23,11 @@
         <!-- Logo + Título -->
         <div class="col-12 col-md-6 d-flex mb-3 mb-md-0">
           <img src="./imagenes/logo.jpg" alt="Logo" width="80" height="80" class="me-3" />
-          <span class="text-decoration-underline">
-            <h1 class="mb-0">Lio Tech Electronics</h1>
-          </span>
+          <h1 class="mb-0 animate__animated animate__rotateInDownLeft">Lio Tech Electronics</h1>
         </div>
 
         <!-- Login -->
-        <div class="col-12 col-md-6 text-md-end">z
+        <div class="col-12 col-md-6 text-md-end">
           <form action="login.php" method="post" class="d-flex gap-2 justify-content-md-end form-control-sm">
             <input type="text" name="usuario" class="flex-grow-1 flex-md-grow-0" placeholder="Usuario" required
               style="min-width: 120px" />
@@ -78,64 +78,70 @@
     </nav>
   </header>
   <main>
-    <section class="container my-5">
-      <h2 class="text-center mb-4">Medios de Pago</h2>
-      <div class="row text-center">
+    <section class="container-fluid text-center my-4 px-4">
+      <h2><strong>¡ Medios de Pagos !</strong></h2>
+      <p> En Lio Tech Electronics, ofrecemos diversas formas de pago para que elijas la que más te convenga. Tenemos
+        opciones para todos los gustos y necesidades. ¡Descubrí cómo hacer tus
+        compras de manera fácil y segura!
+      </p>
+      <div class="row g-4 justify-content-center text-center">
+        <section class="container-fluid my-4 px-4">
+          <div class="row g-4 justify-content-center">
+            <article class="col-12 col-md-4">
+              <div class="card bg-transparent border-0">
+                <img src="../inicio/imagenes/mp.png" class="card-img-top" alt="Mercado Pago" />
+                <div class="card-body">
+                  <h3 class="card-title">Mercado Pago</h3>
+                  <p>
+                    Elegí Mercado Pago para realizar tus compras de manera rápida, simple y 100% segura. Podés usar
+                    saldo, tarjetas de crédito o débito, ¡y recibir confirmación inmediata!
+                    Ideal
+                    para quienes buscan practicidad y protección en cada transacción.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="col-12 col-md-4">
+              <div class="card bg-transparent border-0">
+                <img src="../inicio/imagenes/efectivo.png" class="card-img-top" alt="Efectivo" />
+                <div class="card-body">
+                  <h3 class="card-title">Efectivo</h3>
+                  <p>
+                    ¿Preferís pagar en efectivo? No hay problema. En Lio Tech Electronics te ofrecemos la opción de
+                    abonar
+                    tus compras en efectivo al momento de recibir tu pedido. Así de simple, sin complicaciones ni
+                    trámites
+                    adicionales.
+                  </p>
+                </div>
+              </div>
+            </article>
 
-
-
-        <!-- Mercado Pago -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <img src="../inicio/imagenes/mp.png" alt="Mercado Pago" class="mb-3" style="max-height: 50px;">
-              <h5 class="card-title">Mercado Pago</h5>
-              <p class="card-text">Pagá con tarjeta de crédito, débito o saldo en tu cuenta de Mercado Pago. ¡Todo
-                100%
-                seguro!</p>
-            </div>
+            <article class="col-12 col-md-4">
+              <div class="card bg-transparent border-0">
+                <img src="../inicio/imagenes/tf.png" class="card-img-top" alt="Transferencia Bancarias" />
+                <div class="card-body">
+                  <h3 class="card-title">Transferencias Bancarias</h3>
+                  <p>
+                    Realizá tu pago a través de transferencia o depósito bancario de forma ágil y segura. Una vez
+                    acreditado el pago, procesamos tu pedido inmediatamente. Es ideal para quienes prefieren manejar
+                    todo
+                    desde su homebanking.
+                  </p>
+                </div>
+              </div>
+            </article>
           </div>
-        </div>
-
-        <!-- Efectivo -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <img src="https://cdn-icons-png.flaticon.com/512/2331/2331937.png" alt="Pago en Efectivo" class="mb-3"
-                style="max-height: 50px;">
-              <h5 class="card-title">Efectivo</h5>
-              <p class="card-text">Podés abonar en efectivo al momento de retirar tu compra o al recibirla, según tu
-                ubicación.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Transferencia Bancaria -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <img src="https://cdn-icons-png.flaticon.com/512/3050/3050525.png" alt="Transferencia Bancaria"
-                class="mb-3" style="max-height: 50px;">
-              <h5 class="card-title">Transferencia Bancaria</h5>
-              <p class="card-text">Realizá una transferencia directa a nuestra cuenta bancaria. Te enviaremos los
-                datos
-                al confirmar tu pedido.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    </section>
+        </section>
   </main>
   <footer class="footer">
     <section class="pie-pagina container-fluid px-4 py-3">
       <div class="row text-center text-md-start align-items-center justify-content-between">
         <!-- Columna 1: Copyright -->
         <div class="col-12 col-md-4 mb-2 mb-md-0">
-          <p class="mb-0">
+          <h6 class="mb-0">
             © 2025 Lio Tech Electronics. Todos los derechos reservados.
-          </p>
+          </h6>
         </div>
 
         <!-- Columna 2: Términos -->

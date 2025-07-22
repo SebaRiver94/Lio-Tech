@@ -1,4 +1,5 @@
 @use 'variables' as v;
+@use 'sass:color';
 
 body {
   font-family: v.$font-family;
@@ -35,13 +36,13 @@ h1 {
 }
 h2 {
   font-size: v.$font-size-xl;
-  color: v.$fourth-color;
+  color: v.$tertiary-color;
   margin-bottom: 1rem;
   text-decoration: v.$text-subrayado;
 }
 h3 {
   font-size: v.$font-size-large;
-  color: v.$fourth-color;
+  color: v.$tertiary-color;
   margin-bottom: 0.5rem;
 }
 p {

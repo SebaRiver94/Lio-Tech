@@ -78,8 +78,8 @@
     </nav>
   </header>
   <main>
-    <aside class="contenido-productos">
-      <h2 class="text-center mb-4">Productos</h2>
+    <aside class="container-fluid text-center my-4 px-4">
+      <h2 class=" text-center mb-4">Productos</h2>
 
       <!-- Descripción -->
       <div class="container mb-5">
@@ -99,12 +99,12 @@
         <div class="row justify-content-center">
           <!-- Carrusel 1 -->
           <div class="col-12 col-md-4 mb-4">
-            <h3 class="text-center">Celulares</h3>
-            <div id="carouselCelulares" class="carousel slide carousel-light" data-bs-ride="carousel">
+            <h2 class="text-center title-product">Celulares</h2>
+            <div id="carouselCelulares" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <a href="https://www.samsung.com" target="_blank" rel="noopener noreferrer">
-                    <img src="../imagenes/S25-Ultra.png" class="d-block w-100" alt="Samsung" />
+                    <img src="./productos/celulares/imagenes/SAMSUNG/samsung.png" class="d-block w-100" alt="Samsung" />
                   </a>
                   <div class="carousel-caption">
                     <h3>Samsung</h3>
@@ -112,16 +112,16 @@
                 </div>
                 <div class="carousel-item">
                   <a href="https://www.apple.com/iphone" target="_blank" rel="noopener noreferrer">
-                    <img src="../imagenes/Iphone-16-Pro-Max.png" class="d-block w-100" alt="Appel" />
+                    <img src="./productos/celulares/imagenes/APPLE/apple.png" class="d-block w-100" alt="Apple" />
                   </a>
                   <div class="carousel-caption">
-                    <h3>Apple</h3>
+                    <h3>Iphone</h3>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <a href="https://www.motorola.com" target="_blank" rel="noopener noreferrer">
-                    <img src="../imagenes/Motorola-Razr-60-Ultra.png" class="d-block w-100"
-                      alt="Motorola Razr 60 Ultra" />
+                    <img src="./productos/celulares/imagenes/MOTOROLA/motorola.png" class="d-block w-100"
+                      alt="Motorola" />
                   </a>
                   <div class="carousel-caption">
                     <h3>Motorola</h3>
@@ -143,22 +143,20 @@
 
           <!-- Carrusel 2 -->
           <div class="col-12 col-md-4 mb-4">
-            <h3 class="text-center">Notebooks</h3>
+            <h2 class="text-center title-product">Notebooks</h2>
             <div id="carouselNotebooks" class="carousel slide carousel-light" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <a href="https://www.acer.com" target="_blank" rel="noopener noreferrer">
-                    <img src="../imagenes/Notebook-Acer-PHN14.png" class="d-block w-100" alt="Acer" />
+                    <img src="./productos/notebooks/imagenes/OFICINA/oficina.png" class="d-block w-100" alt="Oficina" />
                   </a>
                   <div class="carousel-caption">
                     <h3>Notebooks para Oficina</h3>
-
                   </div>
                 </div>
                 <div class="carousel-item">
                   <a href="https://www.hp.com" target="_blank" rel="noopener noreferrer">
-                    <img src="../imagenes/Hp-Victus.png" class="d-block w-100"
-                      alt="Notebook Gamer HP Victus 16-R0085CL" />
+                    <img src="./productos/notebooks/imagenes/GAMING/gaming.png" class="d-block w-100" alt="Gaming" />
                   </a>
                   <div class="carousel-caption">
                     <h3>Notebooks para Gaming</h3>
@@ -166,11 +164,10 @@
                 </div>
                 <div class="carousel-item">
                   <a href="https://www.thunderobot.com" target="_blank" rel="noopener noreferrer">
-                    <img src="../imagenes/Thunderobot.png" class="d-block w-100"
-                      alt="Notebook Gamer Thunderobot 911MT" />
+                    <img src="./productos/notebooks/imagenes/DISEÑO/dise.png" class="d-block w-100" alt="Diseño" />
                   </a>
                   <div class="carousel-caption">
-                    <h3>Notebook para Diseño</h3>
+                    <h3>Notebooks para Diseño</h3>
                   </div>
                 </div>
               </div>
@@ -189,116 +186,32 @@
 
           <!-- Carrusel 3 -->
           <div class="col-12 col-md-4 mb-4">
-            <h3 class="text-center">Smartwatches</h3>
-            <div id="carouselSmartwatches" class="carousel slide carousel-light" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <a href="https://www.samsung.com/galaxy-watch" target="_blank" rel="noopener noreferrer">
-                    <img src="../imagenes/S25-Ultra.png" class="d-block w-100" alt="Samsung Watch" />
-                  </a>
-                  <div class="carousel-caption">
-                    <h3>Samsung Watch</h3>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <a href="https://www.apple.com/apple-watch" target="_blank" rel="noopener noreferrer">
-                    <img src="../imagenes/S25-Ultra.png" class="d-block w-100" alt="Apple Watch" />
-                  </a>
-                  <div class="carousel-caption">
-                    <h3>Apple Watch</h3>
-
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <a href="https://www.mi.com/global/xiaomi-watch-2-pro" target="_blank" rel="noopener noreferrer">
-                    <img src="../imagenes/S25-Ultra.png" class="d-block w-100" alt="Xiaomi Watch" />
-                  </a>
-                  <div class="carousel-caption">
-                    <h3>Xiaomi Watch</h3>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselSmartwatches"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-                <span class="visually-hidden">Anterior</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselSmartwatches"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-                <span class="visually-hidden">Siguiente</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- FILA NUEVA -->
-          <div class="w-100"></div>
-
-          <!-- Carrusel 4 -->
-          <div class="col-12 col-md-4 mb-4">
-            <h3 class="text-center">Auriculares</h3>
-            <div id="carouselAuriculares" class="carousel slide carousel-light" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <a href="https://www.samsung.com/galaxy-buds" target="_blank" rel="noopener noreferrer">
-                    <img src="../imagenes/Auriculares JBL.png" class="d-block w-100" alt="" />
-                  </a>
-                  <div class="carousel-caption">
-                    <h3>Auriculares Over-ear</h3>
-
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <a href="https://www.apple.com/airpods" target="_blank" rel="noopener noreferrer">
-                    <img src="../imagenes/Auriculares JBL.png" class="d-block w-100" alt="AirPods Pro 2" />
-                  </a>
-                  <div class="carousel-caption">
-                    <h3>Auriculares In-ear</h3>
-                  </div>
-                </div>
-
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselAuriculares"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-                <span class="visually-hidden">Anterior</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselAuriculares"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-                <span class="visually-hidden">Siguiente</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- Carrusel 5 -->
-          <div class="col-12 col-md-4 mb-4">
-            <h3 class="text-center">Accesorios</h3>
+            <h2 class="text-center title-product">Consolas</h2>
             <div id="carouselAccesorios" class="carousel slide carousel-light" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <a href="https://www.samsung.com" target="_blank" rel="noopener noreferrer">
-                    <img src="../imagenes/Parlante Ecopower.png" class="d-block w-100" alt="Cargador GaN" />
+                    <img src="./productos/consolas/imagenes/playstation.png" class="d-block w-100" alt="Consolas" />
                   </a>
                   <div class="carousel-caption">
-                    <h3>Cargador GaN 100W</h3>
+                    <h3>Playstation</h3>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <a href="https://www.anker.com" target="_blank" rel="noopener noreferrer">
-                    <img src="../imagenes/Parlante Ecopower.png" class="d-block w-100" alt="Power Bank Anker" />
+                    <img src="./productos/consolas/imagenes/microsoft.png" class="d-block w-100" alt="Microsoft" />
                   </a>
                   <div class="carousel-caption">
-                    <h3>Power Bank Anker 20000mAh</h3>
+                    <h3>Microsoft Xbox</h3>
 
                   </div>
                 </div>
                 <div class="carousel-item">
                   <a href="https://www.apple.com" target="_blank" rel="noopener noreferrer">
-                    <img src="../imagenes/Parlante Ecopower.png" class="d-block w-100" alt="Soporte Magsafe" />
+                    <img src="./productos/consolas/imagenes/nintendo.png" class="d-block w-100" alt="Nintendo" />
                   </a>
                   <div class="carousel-caption">
-                    <h3>Soporte para Auto Magsafe</h3>
+                    <h3>Nintendo Switch</h3>
                   </div>
                 </div>
               </div>
@@ -315,35 +228,129 @@
             </div>
           </div>
 
-          <!-- Carrusel 6 -->
+          <!-- FILA NUEVA -->
+          <div class="w-100"></div>
+
+          <!-- Carrusel 4 -->
           <div class="col-12 col-md-4 mb-4">
-            <h3 class="text-center">Accesorios Extra</h3>
-            <div id="carouselAccesorios2" class="carousel slide carousel-light" data-bs-ride="carousel">
+            <h2 class="text-center title-product">Audio</h2>
+            <div id="carouselAuriculares" class="carousel slide carousel-light" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <a href="https://www.samsung.com" target="_blank" rel="noopener noreferrer">
-                    <img src="../imagenes/Parlante Ecopower.png" class="d-block w-100" alt="Cargador GaN" />
+                  <a href="https://www.samsung.com/galaxy-buds" target="_blank" rel="noopener noreferrer">
+                    <img src="./productos/audio/over-ear.png" class="d-block w-100" alt="Over-Ear" />
                   </a>
                   <div class="carousel-caption">
-                    <h3>Cargador GaN 100W</h3>
+                    <h3>Auriculares Over-Ear</h3>
 
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://www.anker.com" target="_blank" rel="noopener noreferrer">
-                    <img src="../imagenes/Parlante Ecopower.png" class="d-block w-100" alt="Power Bank Anker" />
+                  <a href="https://www.apple.com/airpods" target="_blank" rel="noopener noreferrer">
+                    <img src="./productos/audio/in-ear.png" class="d-block w-100" alt="In-Ear" />
                   </a>
                   <div class="carousel-caption">
-                    <h3>Power Bank Anker 20000mAh</h3>
+                    <h3>Auriculares In-Ear</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://www.apple.com/airpods" target="_blank" rel="noopener noreferrer">
+                    <img src="./productos/audio/parlante.png" class="d-block w-100" alt="In-Ear" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Speaker's</h3>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselAuriculares"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselAuriculares"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Carrusel 5 -->
+          <div class="col-12 col-md-4 mb-4">
+            <h2 class="text-center title-product">Smartwatch's</h2>
+            <div id="carouselSmartwatches" class="carousel slide carousel-light" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="https://www.samsung.com/galaxy-watch" target="_blank" rel="noopener noreferrer">
+                    <img src="./productos/smartwatches/imagenes/galaxy-watch.png" class="d-block w-100"
+                      alt="Galaxy Watch" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Samsung Galaxy Watch</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://www.apple.com/apple-watch" target="_blank" rel="noopener noreferrer">
+                    <img src="./productos/smartwatches/imagenes/apple-watch.png" class="d-block w-100"
+                      alt="Apple Watch" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Apple Watch</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://www.mi.com/global/xiaomi-watch-2-pro" target="_blank" rel="noopener noreferrer">
+                    <img src="./productos/smartwatches/imagenes/smartwatch-xiaomi.png" class="d-block w-100"
+                      alt="Smartwatch Xiaomi" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Smartwatch Xiaomi</h3>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselSmartwatches"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselSmartwatches"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+
+
+          <!-- Carrusel 6 -->
+          <div class="col-12 col-md-4 mb-4">
+            <h2 class="text-center title-product">Accesorios</h2>
+            <div id="carouselAccesorios2" class="carousel slide carousel-light" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="https://www.samsung.com" target="_blank" rel="noopener noreferrer">
+                    <img src="./productos/accesorios/imagenes/powerbank.png" class="d-block w-100" alt="Powerbank" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Cargadores Portatiles</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://www.anker.com" target="_blank" rel="noopener noreferrer">
+                    <img src="./productos/accesorios/imagenes/micros.png" class="d-block w-100" alt="Micros" />
+                  </a>
+                  <div class="carousel-caption">
+                    <h3>Micrófonos Bluetooth</h3>
 
                   </div>
                 </div>
                 <div class="carousel-item">
                   <a href="https://www.apple.com" target="_blank" rel="noopener noreferrer">
-                    <img src="../imagenes/Parlante Ecopower.png" class="d-block w-100" alt="Soporte Magsafe" />
+                    <img src="./productos/accesorios/imagenes/soporte-aro.png" class="d-block w-100"
+                      alt="Soporte Aros" />
                   </a>
                   <div class="carousel-caption">
-                    <h3>Soporte para Auto Magsafe</h3>
+                    <h3>Soportes Selfie</h3>
                   </div>
                 </div>
               </div>

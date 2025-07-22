@@ -7,4 +7,5 @@
   padding: 20px;
   text-align: center;
   background: linear-gradient(90deg, v.$primary-color 0%, color.scale(v.$tertiary-color, $lightness: -50%) 100%);
+  width: 100%;
 }

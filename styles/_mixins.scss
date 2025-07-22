@@ -4,3 +4,25 @@
   margin-bottom: $mb;
   text-decoration: $underline;
 }
+@mixin animacion-scroll($distance: 60px, $duration: 0.8s) {
+  opacity: 0;
+  transform: translateY($distance);
+  transition: opacity $duration ease, transform $duration ease;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Aplicación del mixin a las tarjetas
+.aparecer {
+  @include animacion-scroll();
+}
+
+// Generar delays en cascada (opcional hasta 25 elementos)
+@for $i from 1 through 25 {
+  .aparecer:nth-child(#{$i}) {
+    transition-delay: #{($i * 0.1)}s;
+  }
+}

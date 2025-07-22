@@ -13,6 +13,10 @@ body {
   background-repeat: no-repeat;
 }
 
+main {
+  padding-bottom: 100px; // más que el alto del footer
+}
+
 a {
   color: v.$secondary-color;
   text-decoration: v.$text-sin;

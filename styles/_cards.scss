@@ -28,12 +28,19 @@
 }
 
 .btn {
-  margin-top: auto;  // El botón siempre pegado abajo
-  align-self: center; // mantiene el tamaño original y lo alinea al centro
-  padding: v.$padding-button; // padding del botón
-  width: auto; // asegúrate que no tome todo el ancho
+  margin-top: auto;  
+  align-self: center;
+  padding: v.$padding-button;
+  width: auto; 
+}
+.product-card {
+  flex-wrap: wrap;
+  gap: 1rem; // Espacio entre tarjetas
+  justify-content: center; // Centra las tarjetas en la fila
+  margin-top: 1rem; // Espacio superior para separar del filtro
 }
 
+// Animación de flotación
 @keyframes flotar {
     0%   { transform: translateY(0px); }
     50%  { transform: translateY(-8px); }

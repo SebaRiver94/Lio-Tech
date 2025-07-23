@@ -352,7 +352,18 @@ header {
   transition-delay: 2.5s;
 }
 
+h1 {
+  font-size: 2em;
+  color: #f74574;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
 h2 {
+  font-size: 2em;
+  color: #f74574;
+  margin-bottom: 1rem;
+  text-decoration: underline;
   font-size: 2em;
   color: #6a0dad;
   margin-bottom: 1rem;
@@ -361,9 +372,20 @@ h2 {
 
 h3 {
   font-size: 1.5em;
+  color: #f74574;
+  margin-bottom: 0.5rem;
+  font-size: 1.5em;
   color: #6a0dad;
   margin-bottom: 0.5rem;
   text-decoration: underline;
+}
+
+p {
+  color: #4b0f1f;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
 }
 
 /*# sourceMappingURL=styles.css.map */

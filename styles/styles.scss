@@ -8,11 +8,4 @@
 @use 'buttons'as btn;
 @use 'responsive'as r;
 @use 'mixins' as m;
-
-h2 {
-  @include m.heading-style(v.$font-size-xl, v.$secondary-color, 1rem, v.$text-subrayado);
-}
-
-h3 {
-  @include m.heading-style(v.$font-size-large, v.$secondary-color, 0.5rem, v.$text-subrayado);
-}
+@use 'typography' as t;

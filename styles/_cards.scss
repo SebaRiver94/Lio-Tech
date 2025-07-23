@@ -4,21 +4,30 @@
   display: flex;
   flex-direction: column;
   height: 100%; // Para que tome el 100% del contenedor col-md-4 y que sean iguales
-   opacity: 1;
+  opacity: 1;
   filter: brightness(1.1) contrast(1.1);
-  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, transform 0.3s ease;
 
   &:hover {
     filter: brightness(1.2) contrast(1.2);
+    transform: translateY(-5px);
+  }
+
+  // Evitar hover solo en tarjetas con clase sin-hover
+  &.sin-hover {
+    filter: none;
+
+    &:hover {
+      filter: none;
+      transform: none;
+    }
   }
 }
-
 
 .card-body {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  ;
 }
 
 .card-title {
@@ -33,6 +42,7 @@
   padding: v.$padding-button;
   width: auto; 
 }
+
 .product-card {
   flex-wrap: wrap;
   gap: 1rem; // Espacio entre tarjetas
@@ -40,13 +50,13 @@
   margin-top: 1rem; // Espacio superior para separar del filtro
 }
 
-// Animación de flotación
+// Animación de flotación (opcional, si la usás en alguna tarjeta)
 @keyframes flotar {
-    0%   { transform: translateY(0px); }
-    50%  { transform: translateY(-8px); }
-    100% { transform: translateY(2px); }
-  }
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(2px); }
+}
 
-  .flotando {
-    animation: flotar 2s ease-in-out infinite;
-  }
+.flotando {
+  animation: flotar 2s ease-in-out infinite;
+}

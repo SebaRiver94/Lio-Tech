@@ -2,18 +2,18 @@
 @use 'sass:color';
 
 header {
-  background-color: v.$primary-color;
-  color: v.$fourth-color;
+  background-color: v.$primary-color; // Fondo del encabezado
+  color: v.$fourth-color; 
   padding: v.$font-size-caption 0;
-  background: linear-gradient(90deg, v.$primary-color 0%, color.scale(v.$tertiary-color, $lightness: -50%) 100%);
+  background: linear-gradient(90deg, v.$primary-color 0%, color.scale(v.$tertiary-color, $lightness: -50%) 100%); // Degradado del fondo
 }
 
 .navbar-nav .nav-link {
   color: v.$tertiary-color;
-  font-weight: v.$font-weight-regular;
-  background: linear-gradient(90deg, v.$primary-color 0%, color.scale(v.$tertiary-color, $lightness: -50%) 100%);
+  font-weight: v.$font-weight-regular; // Peso de la fuente
+  background: linear-gradient(90deg, v.$primary-color 0%, color.scale(v.$tertiary-color, $lightness: -50%) 100%); // Degradado del fondo de los enlaces
 
-
+// Estilo de los enlaces del encabezado
   &:hover,
   &:focus {
     color: v.$tertiary-color;

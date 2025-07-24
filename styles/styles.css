@@ -56,6 +56,7 @@ p {
   letter-spacing: 0.2px;
 }
 
+/* Animaciones */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -161,8 +162,8 @@ header {
 .carousel-control-prev,
 .carousel-control-next {
   filter: brightness(0) saturate(100%) invert(28%) sepia(76%) saturate(2500%) hue-rotate(300deg) brightness(95%) contrast(92%);
-  border-radius: 50%;
-  padding: 1rem;
+  border-radius: 50%; /* Iconos de flechas */
+  padding: 1rem; /* Espacio alrededor de los iconos */
 }
 
 .carousel-inner img {

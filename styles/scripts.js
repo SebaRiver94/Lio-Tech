@@ -45,6 +45,4 @@ function filtrarProductos() {
         }
     });
 }
-
-// 🚩 ¡AGREGÁ ESTA LÍNEA AL FINAL!
 filtrarProductos();

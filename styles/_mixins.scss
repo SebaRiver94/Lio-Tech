@@ -1,14 +1,19 @@
+// styles/_mixins.scss
+@use 'variables' as v;
+@use 'sass:color';
+// Mixins para estilos reutilizables
 @mixin heading-style($size, $color, $mb: 1rem, $underline: none) {
   font-size: $size;
   color: $color;
   margin-bottom: $mb;
   text-decoration: $underline;
 }
+// Mixin para botones
 @mixin animacion-scroll($distance: 60px, $duration: 0.8s) {
   opacity: 0;
   transform: translateY($distance);
   transition: opacity $duration ease, transform $duration ease;
-
+ // Aplica la animación al elemento cuando se añade la clase 'visible'
   &.visible {
     opacity: 1;
     transform: translateY(0);

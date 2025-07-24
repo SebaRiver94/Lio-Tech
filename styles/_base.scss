@@ -2,12 +2,12 @@
 @use 'sass:color';
 
 body {
-  font-family: v.$font-family;
-  background-color: v.$fourth-color;
+  font-family: v.$font-family; // Fuente principal
+  background-color: v.$fourth-color;  // Color de fondo (gris claro)
   color: v.$primary-color;
-  margin: 0;
-  padding: 0;
-  background-image: url('../inicio/imagenes/fondo.png');
+  margin: 0; // Elimina el margen por defecto
+  padding: 0; // Elimina el padding por defecto
+  background-image: url('../inicio/imagenes/fondo.png'); // Imagen de fondo
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,14 +33,14 @@ section {
 }
 
 h1 {
-  font-size: v.$font-size-xl;
+  font-size: v.$font-size-xl; // Tamaño grande para títulos
   color: v.$tertiary-color;
   margin-bottom: 1rem;
   text-decoration: v.$text-subrayado;
 }
 h2 {
   font-size: v.$font-size-xl;
-  color: v.$tertiary-color;
+  color: v.$tertiary-color; 
   margin-bottom: 1rem;
   text-decoration: v.$text-subrayado;
 }
@@ -57,6 +57,7 @@ p {
   letter-spacing: 0.2px;          // Ligera separación de letras
 }
 
+/* Animaciones */
 @keyframes fadeIn {
   from {
     opacity: 0;

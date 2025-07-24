@@ -4,24 +4,24 @@
 
 // Placeholder reutilizable
 %boton-generico {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+  padding: 0.5rem 1rem; // Espaciado interno
+  border: none;   // Sin borde
+  border-radius: 8px; // Bordes redondeados
+  cursor: pointer; // Cambia el cursor al pasar por encima
+  transition: background-color 0.3s ease; // Transición suave al cambiar el color de fondo
+} 
 
 // Variable para operador
 $padding-base: 1rem;
 
 .container-button,
 .navbar-toggler {
-  background-color: v.$tertiary-color;
+  background-color: v.$tertiary-color; // Color de fondo
   border: solid 1.5px v.$border-color;
-  padding: v.$padding-button;
+  padding: v.$padding-button; 
   font-size: v.$font-size-medium;
   cursor: pointer;
-  color: v.$fourth-color;
+  color: v.$fourth-color; 
 }
 
 // Botón primario
@@ -31,6 +31,7 @@ $padding-base: 1rem;
   border-color: v.$secondary-color;
   color: v.$fourth-color;
 
+  // Estilos adicionales para el botón primario
   &:hover {
     background-color: color.adjust(v.$tertiary-color, $lightness: -10%);
     border-color: v.$secondary-color;

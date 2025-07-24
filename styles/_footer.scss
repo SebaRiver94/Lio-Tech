@@ -2,10 +2,10 @@
 @use 'sass:color';
 
 .footer {
-  background-color: v.$primary-color;
-  color: v.$fourth-color;
+  background-color: v.$primary-color; // Color de fondo del pie de página
+  color: v.$fourth-color; 
   padding: 20px;
   text-align: center;
-  background: linear-gradient(90deg, v.$primary-color 0%, color.scale(v.$tertiary-color, $lightness: -50%) 100%);
-  width: 100%;
+  background: linear-gradient(90deg, v.$primary-color 0%, color.scale(v.$tertiary-color, $lightness: -50%) 100%); // Degradado de fondo
+  width: 100%; // Ancho completo del pie de página
 }

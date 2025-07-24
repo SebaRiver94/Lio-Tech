@@ -1,34 +1,39 @@
 @use 'variables' as v;
 @use 'sass:color';
 
+// Estilos para el Carrusel
 .carousel {
-  position: relative;
-  overflow: hidden;
+  position: relative; // Posicionamiento relativo para el carrusel
+  overflow: hidden; // Ocultar el desbordamiento
 
 }
 
+// Indicadores de Carrusel
 .carousel-control-prev,
 .carousel-control-next {
   filter: brightness(0) saturate(100%) invert(28%) sepia(76%) saturate(2500%) hue-rotate(300deg) brightness(95%) contrast(92%);
-    border-radius: 50%;
-    padding: 1rem;
+    border-radius: 50%; /* Iconos de flechas */
+    padding: 1rem; /* Espacio alrededor de los iconos */
 }
 
+// Estilos de los indicadores del carrusel
 .carousel-inner img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: contain; // Ajustar imagen al contenedor
 }
 
+// Estilos de los controles del carrusel
 .carousel-caption {
   color: v.$fourth-color;
   bottom: 20px;
 }
+
  .carousel-caption h3 {
-  background-color: color.scale(v.$border-color, $lightness: -10%);
-  padding: 0.5rem 1rem;
+  background-color: color.scale(v.$border-color, $lightness: -10%); // Fondo del título
+  padding: 0.5rem 1rem; // Espacio alrededor del texto
   border-radius: 20px;
-  display: inline-block;
+  display: inline-block;  // Mostrar como bloque en línea
   margin-top: 1rem;
   font-size: 1.2rem;
 }
